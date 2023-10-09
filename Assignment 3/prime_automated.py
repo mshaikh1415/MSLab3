@@ -30,7 +30,7 @@ kids_option = driver.find_element("xpath",
 actions.move_to_element(kids_option)
 time.sleep(2)
 kids_option.click()
-time.sleep(1)
+time.sleep(2)
 
 # Again instantiated action chains object otherwise the ActionChain uses a stale DOM.
 actions = ActionChains(driver)
@@ -87,7 +87,7 @@ share_movie.click()
 time.sleep(3)
 social_media_pinterest = driver.find_element("id", "share-widget-Pinterest")
 social_media_pinterest.click()
-time.sleep(3)
+time.sleep(7)
 
 # Closing the web driver
 driver.close()
